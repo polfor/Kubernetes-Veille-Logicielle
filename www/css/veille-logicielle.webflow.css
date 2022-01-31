@@ -355,6 +355,7 @@ li {
 }
 
 .image-container.is--upside-down {
+  width: 100%;
   max-width: 100%;
   padding-left: 0em;
   -webkit-align-self: stretch;
@@ -368,7 +369,12 @@ li {
   max-width: 80%;
 }
 
-.slider {
+.slider-mask {
+  width: 100%;
+}
+
+.screen-slider {
+  width: 100%;
   background-color: transparent;
 }
 
