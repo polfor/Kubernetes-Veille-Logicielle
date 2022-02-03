@@ -1,5 +1,5 @@
 <!DOCTYPE html><!--  This site was created in Webflow. http://www.webflow.com  -->
-<!--  Last Published: Mon Jan 31 2022 18:22:48 GMT+0000 (Coordinated Universal Time)  -->
+<!--  Last Published: Thu Feb 03 2022 09:45:02 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="61f7bcaf15e4992f2ef19374" data-wf-site="61f7bcaf15e4996f07f19373">
 <head>
   <meta charset="utf-8">
@@ -25,7 +25,7 @@
           <a href="code.html" class="buttons">Exemple de code</a>
         </div>
         <div class="nav-links">
-          <a href="https://www.kubernetes.io/fr/" target="_blank" class="w-inline-block"><img src="images/Logo-Kub.svg" loading="lazy" alt="" class="logo-kub"></a>
+          <a data-w-id="3a190737-fae1-0526-57db-9238eff454e7" href="https://www.kubernetes.io/fr/" target="_blank" class="w-inline-block"><img src="images/Logo-Kub.svg" loading="lazy" alt="" class="logo-kub"></a>
         </div>
       </div>
       <div class="separator"></div>
@@ -42,7 +42,7 @@
         <h2>Mais... C’est quoi un conteneur ?</h2><img src="images/downarrow.svg" loading="lazy" alt="" class="section-arrow">
       </div>
       <div class="separator"></div>
-      <div class="section-content">
+      <div class="section-wrapper section-content">
         <p>Un conteneur, est une unité standard contenant (comme son nom l’indique) une application ou un software quelconque, ainsi que tous les éléments dont elle a besoin pour fonctionner (environnement d’exécution, fichiers sources, bibliothèques systèmes, paramètres...).<br></p>
         <p>Quelques bénéfices de la conteneurisation sont...<br></p>
         <ul role="list">
@@ -62,12 +62,12 @@
         <h2>Et les orchestrateurs alors ?</h2><img src="images/downarrow.svg" loading="lazy" alt="" class="section-arrow">
       </div>
       <div class="separator"></div>
-      <div class="section-content">
+      <div class="section-wrapper section-content">
         <p>Un orchestrateur est un système d’automatisation du déploiement, de l’extension et de manière générale de gestion de conteneurs à grande échelle, notamment dans le déploiement de microservices, ou d’applications nécessitant des améliorations constantes. <br></p>
         <p>Les orchestrateurs permettent aussi de créer des services applicatifs sur plusieurs containers, de garantir leur intégrité, et d’assurer le monitoring (surveillance) de ceux-ci.<br></p>
         <p>Même si <a href="http://www.kubernetes.io/fr/" target="_blank" class="in-text__link">Kubernetes</a> et ses dérivés composent plus de 50% du marché des orchestrateurs, il existe d’autres alternatives, dont voici quelques exemples :<br></p>
         <div class="orchestrateurs-wrapper">
-          <div class="alternative-container"><img src="images/dockerswarm.png" loading="lazy" sizes="20vw" srcset="images/dockerswarm-p-500.png 500w, images/dockerswarm-p-800.png 800w, images/dockerswarm-p-1080.png 1080w, images/dockerswarm.png 1528w" alt="" class="alternative-image">
+          <div class="alternative-container"><img src="images/dockerswarm.png" loading="lazy" sizes="(max-width: 767px) 28vw, (max-width: 991px) 26vw, 20vw" srcset="images/dockerswarm-p-500.png 500w, images/dockerswarm-p-800.png 800w, images/dockerswarm-p-1080.png 1080w, images/dockerswarm.png 1528w" alt="" class="alternative-image">
             <div class="alternative-text__holder">
               <p class="alternative-text">
                 <a href="https://docs.docker.com/engine/swarm/" target="_blank" class="in-text__link">Docker swarm</a>, créé par <a href="https://www.docker.com/" target="_blank" class="in-text__link">Docker</a>, permet de gérer des clusters directement depuis l’API Docker, même si docker offre sa technologie de conteneurs à la concurrence.
@@ -98,7 +98,7 @@
         <h2>Bon, et si on parlait de Kubernetes ?</h2><img src="images/downarrow.svg" loading="lazy" alt="" class="section-arrow">
       </div>
       <div class="separator"></div>
-      <div class="section-content">
+      <div class="section-wrapper section-content">
         <p>Maintenant que vous avez une idée de ce que représente un système d’orchestration, faisons un peu d’histoire.<br></p>
         <p>Kubernetes a été créé par <strong>Google </strong>en interne sur la base de <strong>Borg</strong>, leur software de développement continu et de gestion de machines.<br>Annoncé à la mi-2014, et étant publié en Open Source le 21 Juillet 2015, Kubernetes est le premier projet de la <a href="https://www.cncf.io/" target="_blank" class="in-text__link">CNCF</a> (Cloud Native Computing Foundation), une organisation venue du partenariat entre <strong>Google</strong> et la <strong>Fondation Linux</strong>.<br></p>
         <p>
@@ -117,7 +117,7 @@
         <h2>Mais comment ça marche ?</h2><img src="images/downarrow.svg" loading="lazy" alt="" class="section-arrow">
       </div>
       <div class="separator"></div>
-      <div class="section-content"><img src="images/Schéma.svg" loading="lazy" alt=""></div>
+      <div class="section-wrapper section-content"><img src="images/Schéma.svg" loading="lazy" alt=""></div>
     </div>
   </div>
   <div class="section">
@@ -126,7 +126,7 @@
         <h2>Et concrètement ?</h2><img src="images/downarrow.svg" loading="lazy" alt="" class="section-arrow">
       </div>
       <div class="separator"></div>
-      <div class="section-content">
+      <div class="section-wrapper section-content">
         <p>Kubernetes n’étant que les fondations, il faut un système permettant de les employer. Il existe de nombreuses solutions pour cette tâche, dont les plus populaires sont <a href="http://https-www.redhat.com-en-technologies-cloud-computing-openshift" target="_blank" class="in-text__link">Openshift</a>,<br>
           <a href="https://rancher.com/" target="_blank" class="in-text__link">Rancher</a>, et sur le plan cloud <a href="https://aws.amazon.com/fr/eks/" target="_blank" class="in-text__link">Amazon Elastic Kubernetes Service (EKS)</a> ou celui que j’ai utilisé pour <a href="code.html" class="in-text__link light">l’Exemple de code</a>, <a href="https://cloud.google.com/kubernetes-engine/" target="_blank" class="in-text__link">Google Kubernetes Engine</a>.
         </p>
@@ -137,7 +137,7 @@
     </div>
   </div>
   <div class="section">
-    <div class="container">
+    <div class="container is--footer">
       <div class="separator"></div>
       <div class="footer">
         <div class="footer-content">
